@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo advinhação</title>
+</head>
+
+<body style="background-color:beige;">
+    <script type="text/javascript">
+        //Linha de comentário
+        // Calculo do numero aleatorio entre 0 e 100 com random()
+        // retornando um valor inteiro com math.round
+        var num = Math.round(100 * (Math.random()))
+        var num_in, x = 50,
+            tentativas = 0 //Variaveis auxiliares
+        while (true) {
+            num_in = prompt("Adivinhe o numero? (0-100) : ", x)
+            tentativas++ //Incremento do numero de tentativas
+            if (num_in == num) break //Saida do ciclo
+            if (num_in > num) {
+                alert("O numero é menor, Tente de novo...")
+            } else {
+                alert("O numero é maior, Tente de novo...")
+            }
+            x = num_in
+        } // Fecha o while
+        document.write("<h4>Número: ", num, "<p></h4>")
+        document.write("<h4>Você acertou em ", tentativas)
+        document.write(" tentativas!</h4>")
+    </script>
+
+</body>
+
+</html>

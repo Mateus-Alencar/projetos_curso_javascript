@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const pessoa = {
+            nome: 'Mateus',
+            idade: 16,
+        };
+        //chave = key - value, chave valor
+        for (let chave in pessoa) {
+            console.log(chave, pessoa.nome);
+        }
+        const cores = ['Vermelho', 'Azul', 'Verde'];
+        for (let indice in cores) {
+            console.log(indice, cores[indice])
+        }
+    </script>
+</body>
+
+</html>
